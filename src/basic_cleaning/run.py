@@ -60,7 +60,7 @@ if __name__ == "__main__":
         ## INSERT TYPE HERE: str, float or int,
         type = str,
         ## INSERT DESCRIPTION HERE,
-        help = 'The input artifact to clean',
+        help = 'Initial artifact to be cleaned',
         required = True
     )
 
@@ -69,7 +69,7 @@ if __name__ == "__main__":
         ## INSERT TYPE HERE: str, float or int,
         type = str,
         ## INSERT DESCRIPTION HERE,
-        help = 'The name for the cleaned output artifact',
+        help = 'Output artifact for cleaned data',
         required = True
     )
 
@@ -78,7 +78,7 @@ if __name__ == "__main__":
         ## INSERT TYPE HERE: str, float or int,
         type = str,
         ## INSERT DESCRIPTION HERE,
-        help = 'Type of cleaned output artifact',
+        help = 'Type of the output dataset',
         required = True
     )
 
@@ -87,7 +87,7 @@ if __name__ == "__main__":
         ## INSERT TYPE HERE: str, float or int,
         ## INSERT DESCRIPTION HERE,
         type = str,
-        help = 'Description of cleaned output artifact',
+        help = 'Description of the output dataset',
         required = True
     )
 
@@ -96,7 +96,7 @@ if __name__ == "__main__":
         ## INSERT TYPE HERE: str, float or int,
         type = float,
         ## INSERT DESCRIPTION HERE,
-        help = 'The minimum price to consider',
+        help = 'Minimum house price to be considered',
         required = True
     )
 
@@ -105,7 +105,7 @@ if __name__ == "__main__":
         ## INSERT TYPE HERE: str, float or int,
         type = float,
         ## INSERT DESCRIPTION HERE,
-        help = 'The maximum price to consider',
+        help = 'Maximum house price to be considered',
         required = True
     )
 
