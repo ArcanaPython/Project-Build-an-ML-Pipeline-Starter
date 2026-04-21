@@ -13,6 +13,21 @@ logger = logging.getLogger()
 
 # DO NOT MODIFY
 def go(args):
+    """
+    Executes basic cleaning step.
+
+    Parameters
+    __________
+    args : argparse.Namespace
+        Arguments parsed from command line:
+            input_artifact (str): Weights and Biases artifact to clean.
+            output_artifact (str): Name to give clean output artifact.
+            output_type (str): Type of cleaned output dataset.
+            output_description (str): Description to attribute to output dataset.
+            min_price (float): Minimum price to be considered in input artifact.
+            max_price (float): Maximum price to be considered in input artifact.
+
+    """
 
     run = wandb.init(job_type="basic_cleaning")
     run.config.update(args)

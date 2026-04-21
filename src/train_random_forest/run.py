@@ -98,7 +98,9 @@ def go(args):
     # Save the sk_pipe pipeline as a mlflow.sklearn model in the directory "random_forest_dir"
     # HINT: use mlflow.sklearn.save_model
     mlflow.sklearn.save_model(
-        # YOUR CODE HERE
+        # Saves the sk_pipe pipeline to the directory random_forest_dir.
+        # An example of the first 5 rows of the X_train dataset are included in 
+        # Model as an example.
         sk_pipe,
         "random_forest_dir",
         input_example = X_train.iloc[:5]
@@ -123,7 +125,8 @@ def go(args):
     # Here we save variable r_squared under the "r2" key
     run.summary['r2'] = r_squared
     # Now save the variable mae under the key "mae".
-    # YOUR CODE HERE
+    # Creates a log statistic in the run of the mean absolute error
+    # With the key 'mae'.
     run.summary['mae'] = mae
     ######################################
 
@@ -231,6 +234,9 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
     # HINT: Use the explicit Pipeline constructor so you can assign the names to the steps, do not use make_pipeline
 
     sk_pipe = Pipeline(
+        # Creates a pipelines combining the ColumnTransformer preprocessor and the RandomForestRegressor model.
+        # Steps are given names preprocessor and random_forest matching the variable names. 
+        
         steps =[
         # YOUR CODE HERE
         ("preprocessor", preprocessor),
