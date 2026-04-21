@@ -1,8 +1,8 @@
 # GitHub Repository Link
 https://github.com/ArcanaPython/Project-Build-an-ML-Pipeline-Starter.git
 
-# Weights and Biases Project URL
-https://wandb.ai/llions16-/nyc_airbnb/?nw=nwuserllions16
+# Weights and Biases Public Project URL
+https://wandb.ai/llions16-/nyc_airbnb/reports/Udacity-Final-Project--VmlldzoxNjYxNTI0Mg?accessToken=mbn2u0pm8tsv5tfcubx2rkm8w180eoaji56vnl64h0163lfjiqtfcu8o2o7ggaaa
 
 
 
